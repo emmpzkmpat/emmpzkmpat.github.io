@@ -1,0 +1,927 @@
+body{
+    background-image: url("/IMG/FONDO\ PALOS\ BARAJA\ PERSONALIZADOS\ PATRON.jpeg");
+    color: white;
+    margin: 0;
+    
+
+}
+
+.encabezado {
+    position: fixed; /* Fijamos el nav en la parte superior */
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c0000;
+    color: #fff;
+    z-index: 999;
+    
+}
+
+.logo{
+    width: 130px;
+    height: 120px;
+    clip-path: ellipse(100% 50% at 0% 50%);
+    background-color: black;
+}
+
+.logo img {
+    padding-top: 23px;
+    padding-left: 10px;
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.titulo {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+}
+
+.menu-toggle{
+    margin-right: 30px;
+}
+
+.menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2c0000;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.menuimg{
+    height:20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centrar horizontalmente las opciones */
+  
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 8vh;
+    display: block;
+    padding: 10px;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Fondo oscuro semi-transparente */
+    z-index: 999; /* Capa superior */
+}
+
+
+.todo{
+    padding-top: 120px;
+    overflow: hidden;
+}
+
+.presentacion{
+    margin: 30px 60px;
+    overflow: hidden;
+}
+
+.caja{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carta, .texto{
+    flex: 1;
+}
+
+.texto{
+    padding: 30px;
+}
+
+.carta{
+    padding: 25px 50px;
+}
+
+.mifoto{
+    padding: 30px 25%;
+    
+}
+.midata{
+    padding: 10px 10%;
+}
+
+.yo{
+    width: 100%;
+    min-width: 100px;
+    border-radius: 20px;
+}
+
+
+.tarjeta{
+    background-color: #2c0000;
+    width: 100%;
+    height: 500px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden; /* Para asegurar que el contenido no se desborde */
+
+}
+
+tr:hover {
+    background-color: #ff9292;
+    color: black;
+}
+
+td, th {
+    text-align: center;
+    padding: 8px 10px;
+}
+td{
+    width: 230px;
+}
+
+/*AQUI VAN LOS HOBBIES*/
+.hobbies{
+    background-color: rgba(4, 0, 39, 0.87);
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden; /*SI ALGO SE SALE LO QUITA*/
+    height: 400px;
+    max-height: 400px;
+    align-items: center;
+    text-align: center;
+
+    display: grid; /* Aplicamos grid a la sección de hobbies */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuir las secciones en columnas flexibles */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 5px; /* Espacio interno */
+}
+
+.hobbie{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 70px auto 70px;
+    gap: 20px;
+    align-items: center;/* Alineamos los elementos verticalmente */
+}
+
+.hob {
+    /* display:flex; /* Cambiamos de grid a flexbox */
+    /* overflow: hidden; */
+    position: relative;
+    align-items: center;
+    opacity: 1;
+    transition: 1.5s ease-in-out;
+}
+
+
+
+
+.play {
+    /* float: left; */
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-right: 15%;
+}
+
+.figura {
+    /* float: right; El figure ocupará el espacio disponible */
+    padding-left: 65%;
+    right: 0;
+    width: 35%;
+}
+
+.mihobbie{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2{
+    color: rgb(230, 230, 230);
+}
+
+/* HAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA */
+
+
+.deplazo{ /*Flechas*/
+    width: 30px;
+    padding: 10px ;
+}
+
+
+h3{
+    width: 100%;
+}
+
+.styled-paragraphs {
+    max-width: 75vw;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #2c0000;
+    background-color: rgb(49, 0, 49);
+    border-radius: 10px;
+    display: flex; /* Organiza los párrafos en una fila */
+    flex-wrap: wrap; /* Permite que los párrafos se envuelvan a una nueva línea si no caben en el contenedor */
+    justify-content: space-between; /* Distribuye uniformemente los párrafos en el contenedor */
+}
+
+.paragraph {
+    flex: 0 1 calc(33% - 20px); /* Establece que cada párrafo ocupe un tercio del espacio disponible, menos el espacio entre ellos */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #adadad;
+    color: black;
+    border-left: 5px solid rgb(0, 65, 0);
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+}
+
+
+
+.musica{
+    display: grid;
+    gap: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    text-align: center;
+    align-items: center;
+
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(255, 204, 0, 0.85)
+}
+
+.tmusica{
+    font-size: 1.9em;
+    padding: 25px 40px 10px 40px;
+    color: #000f25;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y color RGBA */
+}
+
+.pmusica{
+    padding: 0px 80px;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.Nose{
+    margin: auto;
+    width: 75vw;
+    padding: 7px;
+    transition: padding .2s;
+    border: 1.4px solid black;
+    border-radius: 25px;
+}
+.Nose--add{
+    padding-bottom: 30px;
+}
+
+.infart{
+    color: #000000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nartista{
+    font-size: 1.8em;
+}
+
+
+
+.cuartetoimg{
+    width: 35px;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.meamo {
+    background-color: #33002cec;
+    margin: auto;
+    margin-top: 20px;
+    width: 75vw;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    max-width: 75vw;
+    text-align: center;
+    border:2px solid green;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+
+.section-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff8d0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.image-container {
+    overflow: hidden;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 170px;
+    border-radius: 8px;
+    height: auto;
+    display: block;
+    border: 2px solid rgba(255, 255, 110, 0.774);
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas */
+
+.three-divs-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+    background-color: #030000af;
+}
+
+.tituloamigas{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #030000af;
+}
+
+.div-container {
+    flex: 0 0 30%; /* Tres columnas */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-container:nth-child(1) {
+    background-color: #380046;
+}
+
+.div-container:nth-child(2) {
+    background-color: #7c7000;
+}
+
+.div-container:nth-child(3) {
+    background-color: #103800;
+}
+.hobbies{
+    display: block;
+    height: 100vh;
+}
+
+.opnov{
+    background-color: #030000af;
+    padding-bottom: 30px;
+}
+
+.opnovi{
+    margin-left: 80px;
+    margin-right: 80px;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1b9261;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px;
+    flex: 0 0 20%; /* Para que ocupe el 45% del ancho del contenedor */
+}
+
+.list-item {
+    margin: 10px 0;
+}
+
+
+
+
+/* HOLAAAAAAAA  ADIOS MAS BIEN*/
+footer {
+    background-color:#2c0000;
+    color: #fff;
+    padding-top: 15px;
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: stretch; /* Asegura que los elementos hijos se estiren para ocupar el espacio completo en altura */
+    justify-content: space-between;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding-left: 0;
+    height: 200px; /* Altura fija del footer */
+}
+
+.footer-image {
+    flex: 0 0 auto; /* La imagen no se estira */
+    height: 100%;
+    padding-right: 45px;    
+}
+
+.footer-image img {
+    height: 100%;
+    width: auto;
+    max-width: 250px; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+}
+
+.footer-text {
+    flex: 1;
+    padding: 20px;
+    padding-left: 100px;
+    border-left: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    margin-top: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icon img{
+    height: 50px;
+    padding: 0 35px;
+}
+
+.social-icon img:hover {
+    transform: scale(1.3); /* Color de hover para los iconos de redes sociales */
+}
+
+
+
+
+
+.favorite-artist {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+
+
+.artist-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artist-info .left {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 30px;
+}
+
+.artist-info .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.artist-info img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(15% - 15px);
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.gallery-item .caption {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+}
+
+.PIPIPI{
+    height: 0;
+}
+
+
+
+.gallery-items{
+    flex: 1 1 calc(20% - 15px);
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+}
+.gallery-items img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-items .caption {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.gallery-items:hover .caption {
+    opacity: 1;
+}
+
+.gallery-items p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 700px) {
+    .tarjeta,.texto {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Cuando el ancho de la pantalla sea menor a 600px, cada div ocupará el 100% del ancho */
+    }
+
+    .presentacion{
+        margin: 30px 20px;
+    }
+
+    .texto{
+        min-width: 250px;
+        padding: 35px;
+    }
+    
+    .carta{
+        width: 90%;
+    }
+    
+    /* .mifoto{
+        
+    }
+    
+    .yo{
+        
+    } */
+
+    .image-container img {
+        width: 100%;
+        max-width: 130px;
+        border-radius: 8px;
+        height: auto;
+        display: block;
+        border: 2px solid rgba(255, 255, 110, 0.774);
+    }
+
+    .deplazo{ /*Flechas*/
+        width: 30px;
+        padding: 5px ;
+    }
+    .hobbies{
+        max-height: 120vh;
+        height: 100vh;
+    }
+    .hobbie{
+        display: grid;
+        grid-template-columns: 40px auto 40px;
+        gap: 10px;
+        align-items: center;/* Alineamos los elementos verticalmente */
+    }
+
+    .play {
+        /* float: left; */
+        z-index: 1;
+        position: relative;
+        left: 0;
+        width:70vw;
+        padding: 0;
+    }
+    .paragraph {
+        flex: 0 1 calc(50% - 20px); /* Establece que cada párrafo ocupe un tercio del espacio disponible, menos el espacio entre ellos */
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #adadad;
+        color: black;
+        border-left: 5px solid rgb(0, 65, 0);
+        box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+    }
+    .figura {
+        /* float: right; El figure ocupará el espacio disponible */
+        padding:0;
+        
+        width: 50vw;
+    }
+    .figura img{
+        /* float: right; El figure ocupará el espacio disponible */
+        padding:0;
+        padding-top: 20px;
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+    
+    .tarjeta{
+        background-color: #2c0000;
+        width: 100%;
+        height: 500px;
+    }
+
+    .three-divs-section{
+        display: block;
+    }
+    .tituloamigas{
+        padding: 10px 20px;
+    }
+    .div-container{
+        width: 65vw;
+        margin: 5px auto;
+        
+    }
+    
+
+    .opnovi{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+
+    .list {
+        flex: 0 0 30%; /* Para que ocupe el 22% del ancho del contenedor en pantallas grandes */
+    }
+
+    footer{
+        height: 60vh;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .footer-content {
+        display: block;
+        padding-right: 10vw;
+    }
+
+    .footer-image{
+        position: relative;
+        padding: 0px;
+        height: 24vh; 
+    }
+    .footer-image img{
+        border-radius: 100%;
+    }
+
+    .footer-text {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-icon img{
+        height: 40px;
+        margin: 0px 6px;
+    }
+    
+    
+    .footer-image::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%; /* Ajusta la altura del gradiente según tus necesidades */
+        background: linear-gradient(to bottom, rgba(44, 0, 0, 0.1) 2%, rgba(44, 0, 0, 1) 100%);
+    }
+
+
+
+
+        
+    .favorite-artist {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 900px;
+    }
+
+
+
+    .artist-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .artist-info .left {
+        flex: 1;
+        padding-right: 20px;
+        margin-left: 30px;
+    }
+
+    .artist-info .right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .artist-info img {
+        width: 100%;
+        max-width: 130px;
+        border-radius: 10px;
+        margin-right: 20px;
+        border: 2px solid black;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(30% - 15px);
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+        max-width: 34vw;
+        margin: auto;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .gallery-item .caption {
+        position: absolute;
+    /* bottom: 0; */
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 1);
+        color: #fff;
+        padding: 5px 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .gallery-item:hover .caption {
+        opacity: 1;
+    }
+
+    .gallery-item p {
+        margin-top: 10px;
+    }
+
+    .PIPIPI{
+        height: 0;
+    }
+
+    .gallery-items{
+        flex: 1 1 calc(30% - 15px);
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+    }
+}  
